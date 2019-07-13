@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+
+/*Global*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: minmax(200px; auto);
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+  "header header"
+  "sidebar content"
+  "sidebar content"
+}
+
+.grid-item-1{
+  grid-area: header;
+}
+
+.grid-item-2{
+  grid-area: sidebar;
+}
+
+.grid-item-3{
+  grid-area: content;
+}
